@@ -18,7 +18,7 @@ points = points - strength
 print("Hey, you chose that, not me. STRENGTH SET TO " + str(strength) + "\n")
 print("You have " + str(points) + " skill points remaining.")
 
-dexterity = int(input("How nimble are you? This impacts your ability to move unseen, be flexible, or  (0-100) \n>"))
+dexterity = int(input("How nimble are you? This impacts your ability to move unseen, be flexible, or other deft movements of the limbs and fingers. (0-100) \n>"))
 
 if dexterity > 100 or dexterity < 0 or dexterity > points:
     print("I am afraid that isn't a valid number. In a place like this, one wrong step is enough to get you killed.\nYOU LOSE!")
@@ -27,7 +27,7 @@ points = points - dexterity
 print("DEXTERITY SET TO " + str(dexterity) + "\n")
 print("You have " + str(points) + " skill points remaining.")
 
-intelligence = int(input("How smart are you? (0-100) \n>"))
+intelligence = int(input("How smart are you? This affects your ablitiy to recall facts, understand puzzles, and casting classical magic spells. (0-100) \n>"))
 
 if intelligence > 100 or intelligence < 0 or intelligence > points:
     print("I am afraid that isn't a valid number. In a place like this, one wrong step is enough to get you killed.\nYOU LOSE!")

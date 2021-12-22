@@ -2,7 +2,7 @@ import random
 #strength
 #intelligence
 #dexterity
-#wisdom
+#wisdo
 #charisma
 
 points = 250

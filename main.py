@@ -64,7 +64,7 @@ print("You have completed stat selection. Here are your stats: \n- STRENGTH: "+ 
 print("\n Your eyes dart open as you arise from mound of warm sand. Confused, you stare at your body and quickly brush yourself off as cool air breezes over you. 'Ah, I see you have awoken. It's about time,' a loud voice echos.\n You look around to find the source of the voice and find that you are in what appears to be a muggy sand-ridden cave with magically lit torch sconces")
 
 #First Encounter
-print("You encounter an imposing wall. It stands tall and unmoving. What do you do?")
+print("You encounter an imposing wall with large worn stalagmites standing close to the base. The wall stands tall, cracked, and unmoving. What do you do?")
 
 print("1. punch the wall")
 print("2. climb the wall")
@@ -72,21 +72,33 @@ print("3. magic the wall")
 choice = input("Please, choose a number above>")
 
 if choice == "1":
-    if int(strength) >= 80
-    print("The wall shatters in awe of your divine strength")
+    if int(strength) > 80:
+        print("--The wall shatters in awe of your divine strength.--")
 
     else:
-        
-    roll = random.randrange(0, strength)
-    if roll >  20:
-        print("The wall shatters and you laugh in the face of chance")
+
+        roll = random.randrange(0, strength)
+        if roll >  20:
+            print("--The wall shatters as you laugh in the face of chance.--")
     
-    else:
-        print("Your fist is shattered as you lean into your mighty blow. Ouch, you will need to rest that off.\nYOU LOSE")
-        exit()
+        else:
+            print("--Your fist is shattered as you lean into your mighty blow. Ouch, you will need to rest that off.--\nYOU LOSE")
+            exit()
 
 elif choice == "2":
-    print("")
+    if int(dexterity) > 70:
+        print("--You find cracks in the wall--")
+
+    else:
+
+        roll = random.randrange(0, strength)
+        if roll >  20:
+            print("--.--")
+    
+        else:
+            print("--You clammer unto and up the wall and make a small amount of headway Your footing isn't as sure as you thought it would be.--\nYOU LOSE")
+            exit()
+
 elif choice == "3":
     print("cool")
 else:

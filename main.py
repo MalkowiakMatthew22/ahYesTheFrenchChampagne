@@ -9,7 +9,7 @@ points = 250
 
 print("Welcome, adventurer! Skill point time! (250 points available)")
 
-strength = int(input("How strong are you? This impacts you ability to fight, run for long distances, and other muscle bound activities. (0-100) \n>"))
+strength = int(input("How strong are you? This impacts you ability to fight, run for long distances, and other muscle-bound activities. (0-100) \n>"))
 
 if strength > 100 or strength < 0 or strength > points:
     print("I am afraid that isn't a valid number. In a place like this, one wrong step is enough to get you killed.\nYOU LOSE!")
@@ -55,8 +55,16 @@ points = points - charisma
 print("CHARISMA SET TO " + str(charisma) + "\n")
 print("You have " + str(points) + " skill points remaining.")
 
+#Stats Screen
+
+print("You have completed stat selection. Here are your stats: \n- STRENGTH: "+ str(strength) +" \n- DEXTERITY: "+ str(dexterity) +" \n- INTELLIGENCE: "+ str(intelligence) +" \n- WISDO: "+ str(wisdo) +" \n- CHARISMA: "+ str(charisma) +"")
+
+#Intro
+
+print("\n Your eyes dart open as you arise from mound of warm sand. Confused, you stare at your body and quickly brush yourself off as cool air breezes over you. 'Ah, I see you have awoken. It's about time,' a loud voice echos.\n You look around to find the source of the voice and find that you are in what appears to be a muggy sand-ridden cave with magically lit torch sconces")
+
 #First Encounter
-print("You encounter an imposing wall. It stands tall and unmoving... for now. What do you do?")
+print("You encounter an imposing wall. It stands tall and unmoving. What do you do?")
 
 print("1. punch the wall")
 print("2. climb the wall")
@@ -64,16 +72,21 @@ print("3. magic the wall")
 choice = input("Please, choose a number above>")
 
 if choice == "1":
+    if int(strength) >= 80
+    print("The wall shatters in awe of your divine strength")
+
+    else:
+        
     roll = random.randrange(0, strength)
     if roll >  20:
-        print("The wall shatters in awe of your divine strength")
+        print("The wall shatters and you laugh in the face of chance")
     
     else:
         print("Your fist is shattered as you lean into your mighty blow. Ouch, you will need to rest that off.\nYOU LOSE")
         exit()
 
 elif choice == "2":
-    print("cool")
+    print("")
 elif choice == "3":
     print("cool")
 else:

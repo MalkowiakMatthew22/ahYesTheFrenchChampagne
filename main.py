@@ -18,7 +18,7 @@ points = points - strength
 print("Hey, you chose that, not me. STRENGTH SET TO " + str(strength) + "\n")
 print("You have " + str(points) + " skill points remaining.")
 
-dexterity = int(input("How nimble are you? This impacts your ability to move unseen, be flexible, or other deft movements of the limbs and fingers. (0-100) \n>"))
+dexterity = int(input("How nimble are you? This impacts your ability to move unseen, be flexible, or other deft and precise movements of the limbs and fingers. (0-100) \n>"))
 
 if dexterity > 100 or dexterity < 0 or dexterity > points:
     print("I am afraid that isn't a valid number. In a place like this, one wrong step is enough to get you killed.\nYOU LOSE!")
@@ -27,7 +27,7 @@ points = points - dexterity
 print("DEXTERITY SET TO " + str(dexterity) + "\n")
 print("You have " + str(points) + " skill points remaining.")
 
-intelligence = int(input("How smart are you? This affects your ablitiy to recall facts, understand puzzles, and casting classical magic spells. (0-100) \n>"))
+intelligence = int(input("How smart are you? This affects your ablitiy to recall facts, understand puzzles, and cast classical magic spells. (0-100) \n>"))
 
 if intelligence > 100 or intelligence < 0 or intelligence > points:
     print("I am afraid that isn't a valid number. In a place like this, one wrong step is enough to get you killed.\nYOU LOSE!")
@@ -37,7 +37,7 @@ print("Nice IQ. INTELLIGENCE SET TO " + str(intelligence) + "\n")
 print("You have " + str(points) + " skill points remaining.")
 
 
-wisdo = int(input("How wise are you? (0-100) \n>"))
+wisdo = int(input("How wise are you? This impacts(0-100) \n>"))
 
 if wisdo > 100 or wisdo < 0 or wisdo > points:
     print("I am afraid that isn't a valid number. In a place like this, one wrong step is enough to get you killed.\nYOU LOSE!")
@@ -61,7 +61,7 @@ print("You have completed stat selection. Here are your stats: \n- STRENGTH: "+ 
 
 #Intro
 
-print("\n Your eyes dart open as you arise from mound of warm sand. Confused, you stare at your body and quickly brush yourself off as cool air breezes over you. 'Ah, I see you have awoken. It's about time,' a loud voice echos.\n You look around to find the source of the voice and find that you are in what appears to be a muggy sand-ridden cave with magically lit torch sconces.")
+print("\n Your eyes dart open as you arise from mound of warm sand. Confused, you stare at your body and quickly brush yourself off as cool air breezes over you. 'Ah, I see you have awoken. It's about time,' a loud voice echos.\n You look around to find the source of the voice and find that you are in what appears to be a muggy sand-ridden cave with magically lit torch sconces lining the inside. 'If you survive and escape I will drop all charges against you for your crimes. I simply want to see if the rumors about your feats are true. Please, move forward lest you wish to stay stranded.'")
 
 #First Encounter
 print("You encounter an imposing wall with large worn stalagmites standing close to the base. The wall stands tall, cracked, and unmoving. What do you do?")
@@ -69,11 +69,11 @@ print("You encounter an imposing wall with large worn stalagmites standing close
 print("1. punch the wall")
 print("2. climb the wall")
 print("3. magic the wall")
-choice = input("Please, choose a number above>")
+choice = input("Please, choose a number-->")
 
 if choice == "1":
     if int(strength) > 80:
-        print("--The wall shatters in awe of your divine strength.--")
+        print("--The wall shatters in awe of your divine strength. Your muscles are machine--")
 
     else:
 
@@ -87,7 +87,7 @@ if choice == "1":
 
 elif choice == "2":
     if int(dexterity) > 70:
-        print("--You find cracks in the wall--")
+        print("--You find cracks in the wall and you scale the wall with ease. 'Impressive speed,' shady.--")
 
     else:
 

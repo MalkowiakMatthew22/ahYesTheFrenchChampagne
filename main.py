@@ -3,7 +3,7 @@ import random
 #dexterity
 #intelligence
 #wisdo
-#charisma
+#charismag
 
 points = 250
 

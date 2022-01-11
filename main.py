@@ -3,7 +3,7 @@ import random
 #dexterity
 #intelligence
 #wisdo
-#charismag
+#charisma
 
 points = 250
 
@@ -73,13 +73,13 @@ choice = input("Please, choose a number-->")
 
 if choice == "1":
     if int(strength) > 80:
-        print("--Your muscles, wrought as iron and machined to near perfection, delivers a quaking punch. The wall shatters in awe of your strength.--")
+        print("--Your muscles, wrought as iron and machined to near perfection, delivers a quaking punch. The wall shatters in awe of your strength.\nYou look at the rubble as it sits in a pile on the floor and walk passed it.--")
 
     else:
 
         roll = random.randrange(0, strength)
         if roll >  30:
-            print("--The wall is sturdy and tall, but not without faults. You manage to land a strike in a fault line in the stone by shear luck. The wall shatters as you laugh in the face of chance.--")
+            print("--The wall is sturdy and tall, but not without faults. You manage to land a strike in a fault line in the stone by shear luck. The wall shatters as you laugh in the face of chance. \nYou look at the rubble as it sits in a pile on the floor and walk passed it.--")
     
         else:
             print("--Your fist is shattered as you lean into your blow. Ouch, you will need to rest that off.--\nYOU LOSE")
@@ -108,9 +108,9 @@ else:
 
 #Second Encounter
 
-print("After bypassing the wall you manage to stumble upon a chamber just above it. As you walk through the doorway you see that there is dense folliage covering the walls and the floor have a light moss carpet, cool and refreshing. As you look around you also notice a door set into the side of the room with the IMAGE OF A 3D CUBE ENGRAVED INTO IT. There is also a marble pedestal standing off to the side of the door with a scrambled 3x3 colored cube.")
+print("After bypassing the wall you manage to stumble upon a chamber just ahead of it. As you walk through the doorway you see that there is dense folliage covering the walls\nand the floor have a light moss carpet, cool and refreshing. As you look around you also notice a door set into the side of the room with the IMAGE OF A 3D CUBE\nENGRAVED INTO IT. There is also a marble pedestal standing off to the side of the door with a scrambled 3x3 colored cube.")
 
-print("1. punch ")
-print("2. ")
-print("3. ")
+print("1. commune with nature for aid")
+print("2. try to solve the puzzle")
+print("3. pray to the gods for help")
 choice = input("Please, choose a number-->")
